@@ -33,7 +33,7 @@ M:R:618
 M:V:152
 
 # Maximum number of player races
-M:P:11
+M:P:12
 
 # Maximum number of player classes
 M:C:6
