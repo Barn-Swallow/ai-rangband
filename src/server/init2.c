@@ -929,6 +929,7 @@ static errr init_g_info(void)
 #ifdef ALLOW_TEMPLATES
 
 	/* Save a pointer to the parsing function */
+	plog("We have allow templates");
 	g_head.parse_info_txt = parse_g_info;
 
 #endif /* ALLOW_TEMPLATES */

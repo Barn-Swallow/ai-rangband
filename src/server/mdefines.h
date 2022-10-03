@@ -65,7 +65,7 @@
 /*
  * Maximum number of player "class" types (see "table.c", etc)
  */
-#define MAX_CLASS            6
+#define MAX_CLASS            7
 
 /*
  * Maximum number of player "sex" types (see "table.c", etc)
@@ -135,7 +135,7 @@
 #define RACE_DUNADAN	8
 #define RACE_HIGH_ELF	9
 #define RACE_KOBOLD		10
-
+#define RACE_RAPPY 11
 /*
  * Player class constants (hard-coded by save-files, arrays, etc)
  */

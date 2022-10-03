@@ -33,10 +33,10 @@ M:R:618
 M:V:152
 
 # Maximum number of player races
-M:P:12
+M:P:11
 
 # Maximum number of player classes
-M:C:6
+M:C:7
 
 # Maximum number of player history lines
 M:H:165

@@ -612,7 +612,11 @@ errr init_info_txt(ang_file* fp, char *buf, header *head,
 		if (!buf[0] || (buf[0] == '#')) continue;
 
 		/* Verify correct "colon" format */
-		if (buf[1] != ':') return (PARSE_ERROR_GENERIC);
+		if (buf[1] != ':') 
+		{
+			printf("This is the format %s\n", buf);
+			return (PARSE_ERROR_GENERIC);
+		}
 
 
 		/* Hack -- Process 'V' for "Version" */
@@ -638,6 +642,8 @@ errr init_info_txt(ang_file* fp, char *buf, header *head,
 
 		/* No version yet */
 		if (!okay) return (PARSE_ERROR_OBSOLETE_FILE);
+
+		printf("This is the error parse %s\n", buf);
 
 		/* Parse the line */
 		if ((err = (*parse_info_txt_line)(buf, head)) != 0)

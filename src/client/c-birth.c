@@ -12,6 +12,7 @@
 
 #include "c-angband.h"
 #include "../common/md5.h"
+#include "classChoice.h"
 
 
 /*
@@ -240,7 +241,7 @@ static void choose_sex(void)
 /*
  * Allows player to select a race			-JWT-
  */
-static void choose_race(void)
+static int choose_race(void)
 {
 	player_race *rp_ptr;
 	int                 j, k, l, m;
@@ -306,13 +307,14 @@ static void choose_race(void)
 	}
 
 	clear_from(20);
+	return j;
 }
 
 
 /*
  * Gets a character class				-JWT-
  */
-static void choose_class(void)
+static void choose_class(int validChoice)
 {
 	player_class *cp_ptr;
 	int          j, k, l, m;
@@ -320,6 +322,7 @@ static void choose_class(void)
 	char         c;
 
 	char	 out_val[160];
+	int * validChoiceArray = classAvailable(validChoice);
 
 	if (z_ask_menu_aux)
 	{
@@ -340,14 +343,19 @@ static void choose_class(void)
 	/* Display the legal choices */
 	for (j = 0; j < z_info.c_max; j++)
 	{
-		cp_ptr = &c_info[j];
-		sprintf(out_val, "%c) %s", I2A(j), c_name + cp_ptr->name);
-		put_str(out_val, m, l);
-		l += 15;
-		if (l > 70)
+		//sprintf(out_val, "valid choce %d %d", j, validChoiceArray[j]);
+		//put_str(out_val, m, l);
+		if (validChoiceArray[j] == 1)
 		{
-			l = 2;
-			m++;
+			cp_ptr = &c_info[j];
+			sprintf(out_val, "%c) %s", I2A(j), c_name + cp_ptr->name);
+			put_str(out_val, m, l);
+			l += 15;
+			if (l > 70)
+			{
+				l = 2;
+				m++;
+			}
 		}
 	}
 
@@ -358,7 +366,7 @@ static void choose_class(void)
 		c = inkey();
 		if (c == 'Q') quit(NULL);
 		j = (islower(c) ? A2I(c) : -1);
-		if ((j < z_info.c_max) && (j >= 0))
+		if ((j < z_info.c_max) && (j >= 0) && validChoiceArray[j] == 1)
 		{
 			pclass = j;
 			cp_ptr = &c_info[j];
@@ -540,10 +548,10 @@ void get_char_info(void)
 	choose_sex();
 
 	/* Choose a race */
-	choose_race();
+	byte validChoice = choose_race();
 
 	/* Choose a class */
-	choose_class();
+	choose_class(validChoice);
 
 	/* Choose stat order */
 	choose_stat_order();
