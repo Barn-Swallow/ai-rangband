@@ -65,7 +65,7 @@
 /*
  * Maximum number of player "class" types (see "table.c", etc)
  */
-#define MAX_CLASS            7
+#define MAX_CLASS            8
 
 /*
  * Maximum number of player "sex" types (see "table.c", etc)

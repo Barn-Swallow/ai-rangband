@@ -1,23 +1,24 @@
 
 
               **************************************************
-              **  MAngband         **   The Multiplayer       **
+              **  AI-RAngband      **   The Multiplayer       **
               **                   **       Pits of Angband   **
               **************************************************
-
+    News:
+          The person who defeats Morgoth will be Crowned winner
+          If Morgoth is not killed,
+             the person with the most XP will be Crowned winner 
     Server Rules:
+          No Griefing in Czermna(Town)
+          No PVP in Czermna(Town)
+          Anything goes in Angband:
+               Once you have descended the stairs 
+               into Angband anything goes
+          Anything goes in the wilderness:
+               The wilderness being 
+               anything outside the town structures
+          
+
+    Server Admin: Heathcliff
 
 
-
-
-
-
-
-
-
-
-    Server Admin:
-
-
-
-         Visit the MAngband Home Page at "http://www.mangband.org/"

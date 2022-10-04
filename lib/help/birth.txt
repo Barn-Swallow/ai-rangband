@@ -198,14 +198,21 @@ have intrinsic abilities.
                new to them, and levels are very hard to gain...  They can
                play all classes.  Their constitution cannot be reduced.
  
-          High-Elf
-               High-elves are a race of immortal beings dating from the
-               beginning of time.  Levels are even harder for them to gain 
-               than to Dunedain.  They are masters of all skills, and are
-               strong and intelligent, although their wisdom is sometimes
-               suspect.  They can play all classes except Paladin, and very
-               well at that.  High-elves begin their lives able to see the
-               unseen, and resist light effects just like regular elves.
+          Rappy
+               Rappys are a race of beings not native these lands. They
+               are cowardly and usually attack in groups. Levels are gained  
+               much faster compared to other races. to Dunedain. They are
+               masters of escaping. Never has one seen the dead body of a 
+               Rappy. They are surpisingly well versed in magic, or at least
+               what appears to be magic. Rappys are capable of being any
+               class except Priest, Ranger, or Paladin.
+          
+          Yeek
+               Yeeks are among the most pathetic creatures. Fortunately, their
+               horrible screams can scare away less confident foes, and their
+               skin becomes more and more resistant to acid, as they gain
+               experience. But having said that, even a mediocre monster can wipe
+               the proverbial floor with an unwary Yeek.   
  
  
 === Classes (outdated) ===
@@ -288,6 +295,25 @@ have intrinsic abilities.
                ception,  searching,  and  magical devices.  He has a decent
                saving throw due to his divine alliance.  His primary  stats
                are Strength and Charisma.
+          Mesmer
+               A Mesmer is  an  Illusionist  specialized  in  prayers. They
+               begin with a late game prayer book which contains  teleports
+               and manipulations which they can learn  far  earlier  than a
+               Priest or  a  Paladin. They  also  level  faster  than  most
+               classes. As a trade off they learn far less prayers, and  an
+               average joe when it comes to most tasks. Certainly not awful
+               at any one thing, but outside of  Illusion  Prayers, Mesmers
+               will not be best in any one thing. Primary stat is Charisma.
+          Shadowmancer
+               A Shadowmancer is a Rogue/Mage hybrid. Specializing in  evil
+               magic, you'll  find  Shadowmancers  learn  Acid  and  Poison 
+               spells faster than even a mage. With their dark  magic  they
+               gain even more stealth every 10 levels. This allows them  to
+               even surpass Rogues in stealth. As a trade off,  these  dark
+               sneaky figures are awful with mechanical devices and  cannot
+               hit enemies with throwing weapons  to  save their life. They
+               are also far more fraile than  Rogues  relying  on  magic to
+               save them. Primary stats are Dexterity and Intelligence.  
  
 
 === Stats ===

@@ -12,6 +12,8 @@
 # 	6 - Display messages
 # 	11 - Display status
 # 	12 - Display chat messages
+# 	13 - Display spell list
+# 	14 - Display player (history)
 
 
 W:0:4

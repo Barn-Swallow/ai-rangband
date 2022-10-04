@@ -22,20 +22,22 @@ static int * classAvailable (int i)
     switch (i)
     {
         case PR_HUMAN:
-        case PR_HALF_ELF:
-            classOptions[0] = classOptions[1] = classOptions[2] = classOptions[3] = classOptions[4] = classOptions[5] = classOptions[6] = 1;
+            classOptions[0] = classOptions[1] = classOptions[2] = classOptions[3] = classOptions[4] = classOptions[5] = 1;
             //classOptions = (int[10]){1, 1, 1, 1, 1, 1, 0, 0, 0, 0};
             break;
+        case PR_HALF_ELF:
+            classOptions[0] = classOptions[1] = classOptions[2] = classOptions[3] = classOptions[4] = classOptions[6] = 1;
+            break;
         case PR_ELF:
-            classOptions[0] = classOptions[1] = classOptions[2] = classOptions[3] = classOptions[4] = 1;
+            classOptions[0] = classOptions[1] = classOptions[2] = classOptions[3] = classOptions[4] = classOptions[7] = 1;
             //classOptions = (int[10]){1, 1, 0, 1, 1, 0, 0, 0, 0, 0};
             break;
         case PR_HOBBIT:
-            classOptions[0] = classOptions[3] = classOptions[4] = 1;
+            classOptions[0] = classOptions[3] = classOptions[4] = classOptions[6] = classOptions[7] = 1;
             //classOptions = (int[10]){1, 0, 0, 1, 1, 0, 0, 0, 0, 0};
             break;
         case PR_GNOME:
-            classOptions[0] = classOptions[1] = classOptions[2] = classOptions[3] = 1;
+            classOptions[0] = classOptions[1] = classOptions[2] = classOptions[3] = classOptions[7] = 1;
             //classOptions = (int[10]){1, 1, 1, 1, 0, 0, 0, 0, 0, 0};
             break;
         case PR_DWARF:
@@ -43,11 +45,11 @@ static int * classAvailable (int i)
             //classOptions = (int[10]){1, 0, 1, 0, 0, 1, 0, 0, 0, 0};
             break;
         case PR_HALF_ORC:
-            classOptions[0] = classOptions[2] = classOptions[3] = 1;
+            classOptions[0] = classOptions[2] = classOptions[3] = classOptions[7] = 1;
             //classOptions = (int[10]){1, 0, 1, 1, 0, 0, 0, 0, 0, 0};
             break;
         case PR_HALF_TROLL:
-            classOptions[0] = classOptions[2] = 1;
+            classOptions[0] = classOptions[2] = classOptions[4] = 1;
             //classOptions = (int[10]){1, 0, 1, 0, 0, 0, 0, 0, 0, 0};
             break;
         case PR_DUNADAN:
@@ -55,11 +57,11 @@ static int * classAvailable (int i)
             //classOptions = (int[10]){1, 1, 1, 0, 1, 1, 0, 0, 0, 0};
             break;
         case PR_RAPPY:
-            classOptions[0] = classOptions[1] = classOptions[3] = classOptions[4] = classOptions[6] = 1;
+            classOptions[0] = classOptions[1] = classOptions[3] = classOptions[6] = classOptions[7]= 1;
             //classOptions = (int[10]){1, 1, 1, 0, 1, 0, 0, 0, 0, 0};
             break;
         case PR_YEEK:
-            classOptions[0] = classOptions[2] = classOptions[3] = classOptions[4] = 1;
+            classOptions[0] = classOptions[1] = classOptions[2] = classOptions[3] = classOptions[4] = classOptions[5] = classOptions[6] = classOptions[7] = 1;
             //classOptions = (int[10]){1, 0, 1, 1, 1, 0, 0, 0, 0, 0};
             break;
         default:
